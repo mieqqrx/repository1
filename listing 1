@@ -1,0 +1,19 @@
+#include "windows.h"
+#include <iostream>
+#include <iomanip>
+using namespace std;
+
+int main()
+{
+    SetConsoleCP(1251);
+    SetConsoleOutputCP(1251);
+    double t, a;
+    int x;
+    cout << "Введіть кількість тканини в рулоні (м): ";
+    cin >> t;
+    cout << "Введіть кількість тканини для одного костюма (м): ";
+    cin >> a;
+    x = static_cast<double> (t) / a;
+    cout << "Кількість костюмів які можна пошити з рулону тканини: " << x;
+    return 0;
+}
